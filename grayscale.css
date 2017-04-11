@@ -362,7 +362,27 @@ body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
   back
 }
+.iw_content {
+   font-family: 'Open Sans Condensed', sans-serif;
+   font-size: 15px;
+   font-weight: 400;
+   padding: 10px;
+   background-color: #48b5e9 ;
+   color: white;
+   margin: 1px;
+   border-radius: 2px 2px 0 0;
+}
 
+.iw_title {
+   font-family: 'Open Sans Condensed', sans-serif;
+   font-size: 22px;
+   font-weight: 200;
+   padding: 10px;
+   background-color: #48b5e9 ;
+   color: white;
+   margin: 1px;
+   border-radius: 2px 2px 0 0;
+}
 
 
 
