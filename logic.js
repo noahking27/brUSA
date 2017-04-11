@@ -110,3 +110,4 @@ $('body').on('click', '#addLocation', function(event) {
         });
     }
 });
+
