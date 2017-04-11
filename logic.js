@@ -1,5 +1,4 @@
 
-var mapKey = "AIzaSyANiTNnqGnd6RBhUylmCbKiyNONnEipbS8";
 var newLocationValue = '';
 var cityStateLocation = '';
 var longitude = '';
@@ -7,10 +6,8 @@ var latitude = '';
 var coords = {};
 var cityName = '';
 var cityNameWithPlus = '';
-
 var brewlong = [];
 var brewlat = [];
-var breweryKey = "464c2923de039584755184680e90203c";
 var marker = [];
 var content = [];
 var infowindow = new google.maps.InfoWindow();
@@ -57,7 +54,7 @@ $('body').on('click', '#addLocation', function(event) {
         cityName = longlat.results[0].address_components[0].short_name;
         coords = { lat: latitude, lng: longitude };
         cityNameWithPlus = cityName.replace(/ /g, '+');
-        var breweryURL = "http://api.brewerydb.com/v2/locations?key=464c2923de039584755184680e90203c&locality=" + cityNameWithPlus;
+        var breweryURL = "https://api.brewerydb.com/v2/locations?key=464c2923de039584755184680e90203c&locality=" + cityNameWithPlus;
         initMap();
         $.ajax({
                 url: breweryURL,
